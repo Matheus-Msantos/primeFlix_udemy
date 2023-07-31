@@ -2,6 +2,7 @@
 
 :root {
   --black: #1B2631;
+  --black-secondary: #17202A;
   --yellow: #F1C40F;
   --gray: #F4F6F7;
   --white: #fff;
@@ -18,4 +19,5 @@
 
 body {
   background-color: var(--black);
+  padding-top: 74px;
 }
