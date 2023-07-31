@@ -1,0 +1,42 @@
+.app-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--black-secondary);
+  padding: 0px 16px;
+}
+
+.app-header__logo {
+  width: 65px;
+  cursor: pointer;
+}
+
+.app-header__nav-itens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.app-header__nav-item+.app-header__nav-item {
+  margin-left: 16px;
+}
+
+.app-header__nav-link {
+  background: var(--white);
+  padding: 2px 5px;
+  color: var(--black);
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: .2s;
+}
+
+.app-header__nav-link:hover {
+  background: var(--yellow);
+}
