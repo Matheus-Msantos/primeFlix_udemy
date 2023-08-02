@@ -12,6 +12,7 @@ moment.locale('pt-br');
 function Home() {
 
   const [movies, setMovies] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function loadMovies() {
@@ -23,14 +24,21 @@ function Home() {
         }
       });
 
-      console.log(response.data)
+      setLoading(false)
       setMovies(response.data.results);
     };
 
     loadMovies();
   }, [])
 
-  console.log('movies', movies)
+  if (loading) {
+    return (
+      <>
+        <div className="app-loading__overlay"></div>
+        <div className="app-loading__spiner"></div>
+      </>
+    );
+  }
 
   return (
     <div className="app-home__container">
