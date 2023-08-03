@@ -1,0 +1,53 @@
+.app-404 {
+  height: 100vh;
+  background-image: url('../../assets/img/background-page404.jpg');
+  background-color: var(--black-900);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+}
+
+.app-404__fixed {
+  position: fixed;
+  width: fit-content;
+  height: fit-content;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.app-404__title {
+  font-size: 150px;
+  font-weight: 900;
+  color: var(--yellow);
+}
+
+.app-404__text {
+  text-align: center;
+  font-size: 14px;
+  color: var(--gray);
+}
+
+.app-404__link {
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  background: var(--yellow);
+  color: var(--black);
+  font-weight: 700;
+  text-align: center;
+  border-radius: 16px;
+  margin-top: 24px;
+  padding: 8px 12px;
+  margin: 24px auto 0 auto;
+  transition: .2s;
+}
+
+.app-404__link:hover {
+  background: var(--black);
+  color: var(--yellow);
+  transition: .2s;
+}
