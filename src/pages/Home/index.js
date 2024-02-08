@@ -48,7 +48,7 @@ function Home() {
         return (
           <Link className="app-home__article-container" to={`/filme/${movie.id}`} key={movie.id}>
             <article className="app-home__article" >
-              <img className="app-home__article-img" src={`https://www.themoviedb.org/t/p/w220_and_h330_face/${movie.poster_path}`} alt={movie.title} />
+              <img className="app-home__article-img" src={`https://image.tmdb.org/t/p/w220_and_h330_face/${movie.poster_path}`} alt={movie.title} />
               <Link className="app-home__article-title" to={`/filme/${movie.id}`}>{movie.title}</Link>
 
               <p className="app-home__article-date">Lançamento: {date}</p>

@@ -12,7 +12,7 @@ function RoutesApp() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/filmes/:id" element={<Movies />} />
+        <Route path="/filme/:id" element={<Movies />} />
         <Route path="/favoritos" element={<Favorites />} />
 
         <Route path="*" element={<Page404 />} />
