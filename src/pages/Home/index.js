@@ -51,7 +51,7 @@ function Home() {
               <img className="app-home__article-img" src={`https://image.tmdb.org/t/p/w220_and_h330_face/${movie.poster_path}`} alt={movie.title} />
               <Link className="app-home__article-title" to={`/filme/${movie.id}`}>{movie.title}</Link>
 
-              <p className="app-home__article-date">Lançamento: {date}</p>
+              <p className="app-home__article-date">Lançamento: {date}..</p>
             </article>
           </Link>
         )
